@@ -1,0 +1,222 @@
+
+         body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+
+        }
+
+header {
+  background-color:lightblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+       
+
+        li a {
+            display: inline-block;
+            color: rgb(7, 7, 7);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px #0a5a9c;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(216, 206, 206);
+        }
+
+        li a.active {
+            color: white;
+            background-color: rgb(27, 27, 27);
+        }
+
+        li a.active:hover {
+            color: rgb(252, 244, 244);
+            background-color: rgb(62, 63, 65);
+        }
+
+
+        /* Style the header */
+
+
+        .backimg img {
+            width: 1000px;
+            height: 500px;
+        }
+
+
+        /* Create two columns/boxes that floats next to each other */
+
+        #forms {
+
+            float: center;
+
+            width: 30%;
+
+            height:300px;
+            /* only for demonstration, should be removed */
+
+            background: lightgrey;
+
+            padding: 10px;
+
+        }
+
+
+        /* Style the list inside the menu */
+
+        forms ul {
+
+            list-style-type: none;
+
+            padding: 0;
+
+        }
+
+
+        article {
+
+            float: center;
+            font-size: 1.6rem;
+            padding: 20px;
+
+            width: 150%;
+
+            background-color: #a79d9d;
+
+            height: 600px;
+            /* only for demonstration, should be removed */
+
+        }
+
+
+        /* Clear floats after the columns */
+
+        section:after {
+
+            content: "";
+
+            display: table;
+
+            clear: both;
+
+        }
+
+
+        /* Style the footer */
+
+        footer {
+
+            background-color: #777;
+
+            padding: 10px;
+
+            text-align: center;
+
+            color: white;
+
+        }
+
+        /* for meal */
+        #grad1 {
+            /* height: 200px; */
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(rgb(73, 138, 150), rgb(85, 182, 199), rgb(167, 142, 142), rgb(127, 171, 179), rgb(119, 170, 179), rgb(51, 153, 172), rgb(33, 93, 204));
+            /* Standard syntax (must be last) */
+        }
+
+        #meals {
+
+            margin: 10px;
+            display: flex;
+        }
+
+        #meals .box {
+            border: 2px white;
+            border-radius: 25px;
+            padding: 10px 8px 15px 10px;
+            margin: 2px;
+            background-color: rgb(134, 166, 226);
+        }
+
+        .i4th {
+            width: 410px;
+            height: 280px;
+            padding: 7px 5px 9px 5px;
+        }
+
+        .i5th {
+            width: 410px;
+            height: 280px;
+            padding: 8px 3px 7px 8px;
+        }
+
+        .i6th {
+            width: 410px;
+            height: 280px;
+            padding: 8px -5px 7px 18px;
+        }
+
+
+        #holiday {
+
+            margin: 5px;
+            display: flex;
+        }
+
+        #holiday .box {
+            border: 2px solid brown;
+            border-radius: 25px;
+            padding: 10px 8px 15px 10px;
+            margin: 0px;
+            background-color: rgb(134, 166, 226);
+        }
+
+        /* for services at stations  */
+        #grad3 {
+            /* height: 200px; */
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(rgb(116, 117, 117), rgb(117, 117, 122), rgb(85, 85, 87), rgb(47, 48, 48), rgb(8, 8, 8));
+            /* Standard syntax (must be last) */
+        }
+
+        #free {
+
+            margin: 10px;
+            display: flex;
+        }
+
+        #free .box {
+            border: 2px solid brown;
+            border-radius: 25px;
+            padding: 10px 8px 15px 10px;
+            margin: 0px;
+            background-color: rgb(134, 166, 226);
+        }
+
+
+
+
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+
+                width: 100%;
+
+                height: auto;
+
+            }
+
+        }
+    </style>
